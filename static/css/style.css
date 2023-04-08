@@ -1,0 +1,140 @@
+body {
+  background-color: #2b2b2b;
+  color: #fff;
+  font-family: Arial, sans-serif;
+  font-size: 16px;
+  line-height: 1.5;
+}
+
+h1 {
+  text-align: center;
+  margin-top: 0;
+}
+
+.form {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 2rem;
+}
+
+label {
+  margin-right: 1rem;
+}
+
+select {
+  margin-right: 0.5rem;
+  padding: 0.5rem;
+  border-radius: 5px;
+  border: none;
+  background-color: #333;
+  color: #fff;
+}
+
+button {
+  margin-right: 0.5rem;
+  padding: 0.5rem 1rem;
+  border-radius: 30px;
+  border: none;
+  cursor: pointer;
+  transition: all 0.2s ease-in-out;
+}
+
+button.buy {
+  background-color: green;
+  color: #fff;
+}
+
+button.sell {
+  background-color: red;
+  color: #fff;
+}
+
+button.calculate {
+  background-color: #4caf50;
+  color: #fff;
+}
+
+button:hover {
+  opacity: 0.8;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+th,
+td {
+  padding: 0.5rem;
+  text-align: left;
+  border: 1px solid #ddd;
+}
+
+th {
+  background-color: #333;
+  color: #fff;
+}
+
+td {
+  background-color: #444;
+  color: #fff;
+}
+
+td:last-child {
+  text-align: center;
+}
+
+#results {
+  text-align: center;
+  font-family: monospace;
+  display: inline-block;
+}
+
+.cursor {
+  display: inline-block;
+  vertical-align: middle;
+  height: 1.2em;
+  width: 0.6em;
+  background-color: white;
+  animation: blink 1s infinite;
+  position: relative;
+  top: 1em; /* adjust this value to align the cursor vertically */
+}
+
+@keyframes blink {
+  0% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+input {
+  margin-right: 0.5rem;
+  padding: 0.5rem;
+  border-radius: 5px;
+  border: none;
+  background-color: #333;
+  color: #fff;
+  width: 5rem;
+}
+
+input[type="submit"] {
+  background-color: #4caf50;
+  color: #fff;
+  border-radius: 30px;
+  border: none;
+  cursor: pointer;
+  transition: all 0.2s ease-in-out;
+  padding: 0.5rem 1rem;
+}
+
+input[type="submit"]:hover {
+  opacity: 0.8;
+}
