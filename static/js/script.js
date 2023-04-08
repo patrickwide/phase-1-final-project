@@ -1,8 +1,10 @@
 let data; // Declare a variable "data" with no initial value
-
+const api_url = "https://wide254.pythonanywhere.com/api/wide/";
 // Function to fetch stock data using an async function
 async function fetchStockData(symbol) {
-  const response = await fetch(`/${symbol}`); // Wait for the response from the server using the symbol passed to the function
+  const response = await fetch(
+    `https://wide254.pythonanywhere.com/api/wide/${symbol}`
+  ); // Wait for the response from the server using the symbol passed to the function
   const data = await response.json(); // Wait for the JSON data from the response
   return data; // Return the JSON data
 }
