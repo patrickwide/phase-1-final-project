@@ -1,6 +1,6 @@
 # Stock Market Simulator
 
-This is a simple stock market simulator that allows users to simulate buying and selling stocks based on historical data. The simulator uses data from the Yahoo Finance API to fetch historical stock prices and display them in a table. Users can select a stock symbol, a date range, and a buy/sell time (open, high, low, or close) to simulate buying and selling stocks. The simulator then calculates the profit/loss based on the selected options.
+This is a simple stock market simulator that allows users to simulate buying and selling stocks based on historical data. The simulator uses data from the Yahoo Finance but from a custom api to fetch historical stock prices and display them in a table. Users can select a stock symbol, a date range, and a buy/sell time (open, high, low, or close) to simulate buying and selling stocks. The simulator then calculates the profit/loss based on the selected options.
 
 ## Installation
 
