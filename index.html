@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Stock Market Simulator</title>
+    <link rel="stylesheet" href="./static/css/style.css" />
+  </head>
+  <body>
+    <h1>Stock Market Simulator</h1>
+    <section>
+      <div class="form">
+        <label for="buy-date">Buy:</label>
+        <select id="buy-date" name="buy-date"></select>
+
+        <label for="buy-price">Time:</label>
+        <select id="buy-price" name="buy-price">
+          <option value="Open">Open</option>
+          <option value="High">High</option>
+          <option value="Low">Low</option>
+          <option value="Close">Close</option>
+        </select>
+
+        <label for="sell-date">Sell:</label>
+        <select id="sell-date" name="sell-date"></select>
+
+        <label for="sell-price">Time:</label>
+        <select id="sell-price" name="sell-price">
+          <option value="Open">Open</option>
+          <option value="High">High</option>
+          <option value="Low">Low</option>
+          <option value="Close">Close</option>
+        </select>
+
+        <label for="numberOfShares">No.Shares:</label>
+        <input type="number" id="numberOfShares" value="1" />
+
+        <button type="submit" id="calculate">Calculate</button>
+      </div>
+    </section>
+    <br />
+    <div style="display: inline-flex">
+      <p id="results"></p>
+      <span class="cursor"></span>
+    </div>
+    <br />
+    <hr style="border-top: 1px solid black" />
+    <br />
+    <section>
+      <label for="fetch-symbol-options">Symbol:</label>
+      <select id="fetch-symbol-options" name="fetch-symbol-options">
+        <option value="AAPL">AAPL</option>
+        <option value="AMZN">AMZN</option>
+        <option value="GOOG">GOOG</option>
+      </select>
+      <button id="fetch-symbol">Fetch</button>
+      <label for="filter-from-date">From:</label>
+      <select id="filter-from-date" name="filter-from-date"></select>
+      <label for="filter-to-date">To:</label>
+      <select id="filter-to-date" name="filter-to-date"></select>
+      <button id="filter-by-date">Filter</button>
+    </section>
+    <br />
+    <section>
+      <table>
+        <thead>
+          <tr>
+            <th>Date</th>
+            <th>Open</th>
+            <th>High</th>
+            <th>Low</th>
+            <th>Close</th>
+            <th>Adj Close</th>
+            <th>Volume</th>
+            <th>Action</th>
+          </tr>
+        </thead>
+        <tbody></tbody>
+      </table>
+    </section>
+    <script src="./static/js/script.js"></script>
+  </body>
+</html>
